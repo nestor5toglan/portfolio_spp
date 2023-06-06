@@ -1,0 +1,1561 @@
+/*
+Theme Name: NexTech
+Author: Mr Nestor 
+Description: Une brève description de votre thème
+Author URI: http://sppversion1.local/
+Version: 1.0
+*/
+
+
+
+/*define var for the root element */
+:root{
+    --main-bg-color:#8d0000;
+    --main-color:hsl(0, 0%, 100%);
+    --main-color-hover:#f7b80c;
+    --backgroundrecherche-color:#807e7ba2;
+    --backgroundcolor-recherche-par-categorie:#000000;
+    /*--desktop:1200px;
+    --laptop:992px;
+    --tablet:768px;
+    --phone:400px;*/
+
+    
+}
+/*-------------------------*/
+
+
+/*-------------------------*/
+/*body css */
+
+.body{
+   /* width: 1685px;
+    height: 10000px;*/
+   
+   
+    background-color: var(--main-color);
+    
+}
+
+
+
+.dialog-image {
+  max-width: 100%;
+}
+
+
+/*body css*/
+/*-------------------------*/
+
+
+
+
+/*.nav{
+    background-color: var(--main-bg-color);
+    width:1000px ;
+    height: 90px;
+    margin-top: -4em;
+    margin-left: 40em;/*40em
+    
+}*/
+
+
+
+/*-------------------------*/
+
+/*logo css 300  -1*/
+.logo {
+   
+    width:300px;
+    margin-left: -1.5%;
+}
+/*logo css*/
+/*-------------------------*/
+
+
+
+/*-------------------------*/
+/* css de la balise nav*/
+.nav{
+   color: var(--main-color);
+   border-radius: 25px;
+   border: 1px solid #ffffff;
+   width: 130px;
+   height: 37px;
+   padding: 5px;
+   margin: 5px;
+   text-indent: 30px;
+}
+
+.nav:hover{
+    color:#ffffff ;
+    background-color:var(--main-color-hover);
+
+}
+
+.div-denav{
+    width: 100%/*1685px*/;
+    height: 185px;
+    background-color: var(--main-bg-color);
+    padding: 3em;
+    position: fixed;
+    top:0;
+    z-index: 4;
+  
+    
+
+    
+   
+    
+    
+}
+
+.div-denav a{
+   
+    display: inline-block;
+    
+   
+   
+   
+}
+
+
+/*css de la balise de nav*/
+
+/*-------------------------*/
+
+
+
+/*-------------------------*/
+
+/* css de la zone recherche--------------------------------*/
+
+
+.sct-recherche{
+    width:100% /*1685px*/;
+    height: 202px;
+    background-color: hsl(0, 0%, 100%);
+
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.bloc-recherche{
+    width: 1110px;
+    height: 50;
+
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+
+}
+
+.recherche{
+    width: 1100px;
+    height: 202px;
+
+
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+
+.inpt-recherche{
+    width: 800px;
+    height: 46;
+
+   border-radius: 25px;
+   border: solid 1px;
+  
+   padding: 9px;
+   margin-top: -4em;
+   margin-bottom:4em;
+   margin-left: 22em;
+
+
+}
+
+.lbl-recherche{
+    
+    margin-top: 7em;
+    margin-left: 15em;
+}
+
+.fa-search{
+    margin-left: -3em;
+   
+    margin-top: -2em;
+
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+   
+   
+}
+
+
+@media screen and (max-width:600px) {
+    .sct-recherche{
+        width: 29em;
+        height: auto;
+        /*background-color: var(--backgroundrecherche-color);*/
+        background-color: hsl(0, 0%, 100%);
+
+    }
+
+    .bloc-recherche{
+        width: 29em;
+        height: auto;
+
+    }
+
+    .recherche{
+        width: 28em;
+        height: auto;
+
+    }
+
+    .inpt-recherche{
+        margin-top: 2em;
+        margin-left: 4em;
+        width: 330px;
+        display: flex;
+        position: relative;
+        font-size: 12px;
+        
+    }
+
+    .lbl-recherche{
+        margin-top: 2em;
+        margin-left: 10em;
+        
+    }
+
+    .fa-search{
+        margin-top: 8%;
+        position: relative;
+        margin-left: -5.9%;
+       
+        
+        
+      
+    }
+
+
+    
+}
+/* css de la zone recherche----------------------------*/
+
+/*-------------------------*/
+
+
+
+
+
+
+/*-------------------------*/
+/*responsivité du menu---------------------------------*/
+
+.div-denav .icon {
+    display: none;
+  }
+@media screen and (max-width:600px) {
+    .div-denav{
+       width: 440px;
+    }
+    .div-denav a.icon{
+        margin-top: -2em;
+    }
+    
+}
+
+  
+@media screen and (max-width: 600px) {
+    .div-denav a:not(:first-child) {display: none;}
+    .div-denav a.icon {
+      float: left;
+      display: block;
+      padding-top: 4em;
+      font-size: 20px;
+      color: #ffffff;
+    }
+
+   
+
+   
+
+    
+  }
+  
+@media screen and (max-width: 600px) {
+    .div-denav.responsive {position:relative;}
+    .div-denav.responsive .icon {
+      position: absolute;
+      left: 2;
+      top: 2;
+      padding: 5px;
+
+    }
+
+    
+
+
+    .div-denav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+
+    
+
+    
+  
+    
+  }
+
+
+/*responsivité du menu-------------------------------------*/
+/*-------------------------*/
+
+
+
+
+
+/*-------------------------*/
+/*recherche par grande  categorie */
+.recherche-par-categorie{
+    width:100% /*1685px*/;
+    height: 150px;
+    background-color: var(--backgroundcolor-recherche-par-categorie);
+
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+
+
+}
+
+ul.search-by-categorie li{
+    display: inline;
+    color:var(--main-color);
+    padding: 25px;
+    margin: 20px;
+
+    
+}
+.search-by-categorie{
+    padding-top: 1em;
+    margin-left: -4em;
+
+}
+ul.search-by-categorie li:hover{
+    color: var(--main-color-hover);
+}
+
+#boutton-recherche-par-categorie{
+    margin-left: -17em/*3em*/;
+    margin-top: -3em;
+    border:2px solid var(--main-bg-color);
+    border-radius: 10px;
+    width: 80px;
+    background-color: var(--backgroundcolor-recherche-par-categorie);
+
+
+   
+}
+
+#boutton-recherche-par-categorie:hover{
+    background-color: var(--main-color-hover);
+}
+
+
+
+@media screen and (max-width:600px) {
+
+    ul.search-by-categorie li{
+        display: inline;
+        color:var(--main-color);
+        padding: 5px;
+        margin: 3px;
+    
+        
+    }
+
+    .recherche-par-categorie{
+        width:29em ;
+        height: auto;
+        background-color: var(--backgroundcolor-recherche-par-categorie);
+    }
+    
+
+    .search-by-categorie{
+        width: 400px;
+        margin-left: 0.5em;
+    }
+
+    .list-catgorie{
+        display:inline;
+        font-size: 10px;
+    }
+
+    #boutton-recherche-par-categorie{
+        margin-left: -1em;
+        margin-bottom: 15px;
+        margin-top: -9px;
+        border:2px solid var(--main-bg-color);
+        border-radius: 5px;
+        width: 50px;
+        background-color: var(--backgroundcolor-recherche-par-categorie);
+    }
+
+    .titre-campgn{
+        margin-left: -90%;
+        margin-top: 1px;
+
+    }
+
+  
+    
+   
+}
+
+/*recherche par grande  categorie */
+/*-------------------------*/
+
+
+
+
+
+
+
+
+/*-------------------------*/
+/* css titre campagne commerciale */
+
+
+.campgne-paraph:hover{
+    color:#ffffff ;
+    background-color:var(--main-color-hover);
+}
+
+.campgne-paraph{
+
+    font-size: 14px;
+    padding-top: 9px;
+    padding-left: 45px /*70px*/;
+    
+    padding-right: 5px;
+
+
+
+    width: 300px;
+    height: 40px;
+    margin-left: -5em;
+    color: var(--main-color);
+    border-radius: 25px;
+    border: 1px solid #ffffff;
+
+    background:var(--main-bg-color);
+    margin-top: -1em;
+  
+}
+
+
+
+
+/* css titre campagne commerciale */
+/*-------------------------*/
+
+
+
+
+
+/*-------------------------*/
+/* css section campagne commerciale */
+
+.campgne-comcial-img-div{
+  width: 1685px;
+  height: 560px;
+
+
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.imge-campgne-comrciale{
+  width: 1120px;
+  height: 550px;
+  margin-left: 20em;
+  margin-top: 0.2em;
+
+
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+/*effet de transition on hover campagne image*/
+.box #front,
+.box #back{
+  position: absolute;
+  transition: 2s;
+  backface-visibility: hidden;
+
+}
+
+.box #front{
+  transform: perspective(1000px) rotateY(0deg);
+  z-index: 2;
+}
+.box #back{
+  transform: perspective(1000px) rotateY(180deg);
+  z-index: 1;
+}
+.box{
+  
+  width: 1685px;
+  height: 560px;
+
+}
+
+.box:hover #front{
+  transform: perspective(1000px) rotateY(-180deg);
+  z-index: 2;
+}
+.box:hover #back{
+  transform: perspective(1000px) rotateY(0deg);
+  z-index: 1;
+}
+/*effet de transition on hover campagne image*/
+
+
+@media screen and (max-width:600px){
+  .campgne-comcial-img-div{
+      width:29em;
+      height: auto;
+  }
+
+  .imge-campgne-comrciale{
+      width: 300px;
+      height: auto;
+
+      margin-left: 4em;
+  }
+
+  .box{
+      width: 440px;
+      height: 10em;
+  }
+}
+
+
+/* css section campagne commerciale */
+/*-------------------------*/
+
+
+
+
+
+
+
+/*-------------------------*/
+/* css section soldes */
+
+/*titre solde*/
+.div-titre-solde{
+
+  margin-top: 5px;
+  height: 100%;
+  background-color: var(--backgroundcolor-recherche-par-categorie);
+   text-align: center;
+}
+.titre-solde{
+font-size: 25px;
+  font-weight: bolder;
+ width: 50%;
+ height: 100%;
+ text-align: center;
+ padding: 1%;
+
+ color: #f1f1f1;
+ background-color: var(--main-bg-color);
+ border: 1px solid;
+ border-radius: 25px;
+ margin: 2%;
+
+}
+
+.titre-solde:hover{
+  background-color: var(--main-color-hover);
+}
+/*titre solde */
+
+
+           /*solde1*/
+.flex-container-div-solde1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #8d0000;
+  }
+  
+  .flex-container-div-solde1 > div {
+    background-color: #f1f1f1;
+    width: 1080px;
+    height: 350px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+   
+  }
+  .titre-solde1{
+    color: var(--main-bg-color);
+    font-weight:bolder;
+
+  }
+  .description-solde1{
+    color: var(--backgroundcolor-recherche-par-categorie);
+
+  }
+  .btn-solde1{
+    background-color: #747577e0;
+    width: 70%;
+    border: 1px solid ;
+    border-radius: 10px;
+
+  }
+  .btn-solde1:hover{
+    background-color: dodgerblue;
+    color: #f1f1f1;
+  }
+
+  .solde1-imge-property{
+    width: 100%;
+    height: 100%;
+  }
+  .etiquette-soldes{
+    margin-bottom: -0.1%;
+  
+    background-color: #000000;
+    border: 1px solid;
+    text-align: justify;
+    color: #f1f1f1;
+   
+  }
+
+  @media screen and (max-width:600px) {
+    .flex-container-div-solde1 > div{
+        height: 200px /*150px*/;
+        font-size: 14px;
+        line-height: 12px;
+       
+
+    }
+
+    .titre-solde{
+      font-size: 20px;
+    }
+    
+  }
+  /*proprieté css des logo pres du titre */
+.logos-titre{
+  width: 100px; 
+  height:100px ;
+}
+
+@media screen and (max-width:600px){
+  .logos-titre{
+  width: 45px; 
+  height: 45px ;
+
+
+  }
+}
+  /*proprieté css des logo pres du titre */
+
+.offre-description-standar{
+  color: red;
+  font-size: 20;
+}
+
+@media screen and (max-width:600px){
+  .offre-description-standar{
+    color: red;
+    font-size: 10px;
+}
+}
+
+
+
+
+
+
+
+
+
+             /*solde1*/
+
+                        /*solde2*/
+
+
+                        /*solde2*/
+
+                        /*solde3*/
+
+                        
+                        /*solde3*/
+
+/*section de publicite2*/
+.section-publicite2{
+    background-color: var(--backgroundcolor-recherche-par-categorie);
+    color: #f1f1f1;
+}
+
+.init-zone-pub{
+  font-size: 200%;
+  
+}
+
+.flex-container-div-publicite2 {
+    display: flex;
+    justify-content: space-around;
+    background-color:var(--backgroundcolor-recherche-par-categorie);
+  }
+  
+  .flex-container-div-publicite2  > div {
+    background-color: #f1f1f1;
+    width: 1080px;
+    height: 350px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+   
+  }
+  .titre-publicite2 {
+    color: var(--main-bg-color);
+    font-weight:bolder;
+
+  }
+  .description-publicite2 {
+    color: var(--backgroundcolor-recherche-par-categorie);
+
+  }
+  .btn-publicite2 {
+    width: 70%;
+    border: 1px solid ;
+    border-radius: 10px;
+
+  }
+  .btn-publicite2:hover{
+    background-color:var(--backgroundcolor-recherche-par-categorie);
+    color: #f1f1f1;
+  }
+
+  .publicite2-imge-property{
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width:600px) {
+    .flex-container-div-publicite2 > div{
+        height: 150px;
+        font-size: 14px;
+        line-height: 12px;
+       
+
+    }
+    
+  }
+/*section de publicite2*/
+
+/*css section promotion */
+ /*titre promotion*/
+.div-titre-promotions{
+
+    margin-top: 5px;
+    height: 100%;
+    background-color: var(--backgroundcolor-recherche-par-categorie);
+     text-align: center;
+}
+.titre-promotions{
+  font-size: 25px;
+    font-weight: bolder;
+   width: 50%;
+   height: 100%;
+   text-align: center;
+   padding: 1%;
+ 
+   color: #f1f1f1;
+   background-color: var(--main-bg-color);
+   border: 1px solid;
+   border-radius: 25px;
+   margin: 2%;
+
+}
+
+.titre-promotions:hover{
+    background-color: var(--main-color-hover);
+}
+ /*titre promotion */
+
+ /*css promotion1*/
+ .flex-container-div-promotion1 {
+    display: flex;
+    justify-content: space-around;
+    background-color:var(--main-color-hover);
+  }
+  
+  .flex-container-div-promotion1 > div {
+    background-color: #f1f1f1;
+    width: 1080px;
+    height: 350px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+   
+  }
+  .titre-promotion1{
+    color: var(--main-bg-color);
+    font-weight:bolder;
+
+  }
+  .description-promotion1{
+    color: var(--backgroundcolor-recherche-par-categorie);
+
+  }
+  .btn-promotion1{
+    background-color: #747577e0;
+    width: 70%;
+    border: 1px solid ;
+    border-radius: 10px;
+
+  }
+  .btn-promotion1:hover{
+    background-color: var(--main-color-hover);
+    color: #f1f1f1;
+  }
+
+  .promotion1-imge-property{
+    width: 100%;
+    height: 100%;
+  }
+  .etiquette-promotion{
+    margin-bottom: -0.1%;
+  
+    background-color: #000000;
+    border: 1px solid;
+    text-align: justify;
+    color: #f1f1f1;
+   
+  }
+
+  @media screen and (max-width:600px) {
+    .flex-container-div-promotion1 > div{
+        height: 150px;
+        font-size: 14px;
+        line-height: 12px;
+       
+
+    }
+
+    .titre-promotions{
+      font-size: 20px;
+    }
+    
+  }
+ /* css promotion1*/
+ /*css promotion2*/
+
+
+/*css promotion2*/
+/*css promotion3*/
+
+                        
+/*css promotion3*/
+/*css section promotion */
+
+
+/*section publicite3*/
+.section-publicite3{
+    background-color: var(--backgroundcolor-recherche-par-categorie);
+    color: #f1f1f1;
+}
+/*font size du texte de publicité separateur*/
+.init-zone-pub{
+  font-size: 200%;
+  
+}
+
+.flex-container-div-publicite3 {
+    display: flex;
+    justify-content: space-around;
+    background-color:#f1f1f1;
+  }
+  
+  .flex-container-div-publicite3  > div {
+    background-color: #f1f1f1;
+    width: 1080px;
+    height: 350px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+   
+  }
+  .publicite3-imge-property{
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width:600px) {
+    .flex-container-div-publicite3 > div{
+        height: 150px;
+        font-size: 14px;
+        line-height: 12px;
+       
+
+    }
+    
+  }
+/*section publicite3*/
+
+
+
+
+
+/* css de la section de nouveautes */
+  
+/*css section nouveautes */
+ /*titre nouveautes*/
+.div-titre-nouveaute{
+
+    margin-top: 5px;
+    height: 100%;
+    background-color: var(--backgroundcolor-recherche-par-categorie);
+     text-align: center;
+}
+.titre-nouveaute{
+  font-size: 25px;
+
+  font-weight: bolder;
+   width: 50%;
+   height: 100%;
+   text-align: center;
+   padding: 1%;
+ 
+   color: #f1f1f1;
+   background-color: var(--main-bg-color);
+   border: 1px solid;
+   border-radius: 25px;
+   margin: 2%;
+
+}
+
+.titre-nouveaute:hover{
+    background-color: var(--main-color-hover);
+}
+ /*titre nouveaute */
+
+ /*css nouveaute1*/
+ .flex-container-div-nouveaute1 {
+    display: flex;
+    justify-content: space-around;
+    background-color:#51ff77;
+  }
+  
+  .flex-container-div-nouveaute1 > div {
+    background-color: #f1f1f1;
+    width: 1080px;
+    height: 350px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+   
+  }
+  .titre-nouveaute1{
+    color: var(--main-bg-color);
+    font-weight:bolder;
+
+  }
+  .description-nouveaute1{
+    color: var(--backgroundcolor-recherche-par-categorie);
+
+  }
+  .btn-nouveaute{
+    background-color: #747577e0;
+    width: 70%;
+    border: 1px solid ;
+    border-radius: 10px;
+
+  }
+  .btn-nouveaute:hover{
+    background-color: #51ff77;
+    color: #f1f1f1;
+  }
+
+  .nouveaute1-imge-property{
+    width: 100%;
+    height: 100%;
+  }
+  .etiquette-nouveaute{
+    margin-bottom: -0.1%;
+  
+    background-color: #000000;
+    border: 1px solid;
+    text-align: justify;
+    color: #f1f1f1;
+   
+  }
+
+  @media screen and (max-width:600px) {
+    .flex-container-div-nouveaute1 > div{
+        height: 150px;
+        font-size: 14px;
+        line-height: 12px;
+       
+
+    }
+
+    .titre-nouveaute{
+      font-size: 20px;
+    }
+    
+  }
+
+
+
+  
+ /* css nouveaute1*/
+
+ /*css nouveaute2*/
+
+
+/*css nouveaute2*/
+/*css nouveaute3*/
+
+                        
+/*css nouveaute3*/
+/*css section nouveautes */
+
+/* css de la section de nouveates */
+
+
+
+/*css de la section evenement */
+/*titre evenement*/
+.div-titre-evenement{
+
+    margin-top: 5px;
+    height: 100%;
+    background-color: var(--backgroundcolor-recherche-par-categorie);
+     text-align: center;
+}
+.titre-evenement{
+  font-size: 25px;
+
+  font-weight: bolder;
+   width: 50%;
+   height: 100%;
+   text-align: center;
+   padding: 1%;
+ 
+   color: #f1f1f1;
+   background-color: var(--main-bg-color);
+   border: 1px solid;
+   border-radius: 25px;
+   margin: 2%;
+
+}
+
+.titre-evenement:hover{
+    background-color: var(--main-color-hover);
+}
+ /*titre evenement */
+
+ /*css evenement1*/
+ .flex-container-div-evenement1 {
+    display: flex;
+    justify-content: space-around;
+    background-color:#fafafa;
+  }
+  
+  .flex-container-div-evenement1 > div {
+    background-color: #f1f1f1;
+    width: 1080px;
+    height: 350px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+   
+  }
+  
+
+  .evenement1-imge-property{
+    width: 100%;
+    height: 100%;
+  }
+  .etiquette-evenement{
+    margin-bottom: -0.1%;
+  
+    background-color: #000000;
+    border: 1px solid;
+    text-align: justify;
+    color: #f1f1f1;
+   
+  }
+
+  @media screen and (max-width:600px) {
+    .flex-container-div-evenement1 > div{
+        height: 150px;
+        font-size: 14px;
+        line-height: 12px;
+       
+
+    }
+
+    .titre-evenement{
+      font-size: 20px;
+    }
+    
+  }
+  /*css evenement1*/
+/*css de la section evenement*/
+
+
+
+
+/*css de la section video*/
+/*css video1*/
+.flex-container-div-video1 {
+    display: flex;
+    justify-content: space-around;
+    background-color:#fafafa;
+  }
+  
+  .flex-container-div-video1 > div {
+    background-color: #f1f1f1;
+    width: 1080px;
+    height: 350px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+   
+  }
+  
+
+  .video1-imge-property{
+    width: 100%;
+    height: 100%;
+  }
+  .etiquette-video{
+    margin-bottom: -0.1%;
+  
+    background-color: #000000;
+    border: 1px solid;
+    text-align: justify;
+    color: #f1f1f1;
+   
+  }
+
+  @media screen and (max-width:600px) {
+    .flex-container-div-video1 > div{
+        height: 150px;
+        font-size: 14px;
+        line-height: 12px;
+       
+
+    }
+    
+  }
+  /*css video1*/
+/*css de la section video1*/
+
+
+
+
+
+/*css de la section enseigne */
+/*titre enseigne*/
+.div-titre-enseigne{
+
+    margin-top: 5px;
+    height: 100%;
+    background-color: var(--backgroundcolor-recherche-par-categorie);
+     text-align: center;
+}
+.titre-enseigne{
+    font-weight: bolder;
+   width: 50%;
+   height: 100%;
+   text-align: center;
+   padding: 1%;
+ 
+   color: #f1f1f1;
+   background-color: var(--main-bg-color);
+   border: 1px solid;
+   border-radius: 25px;
+   margin: 2%;
+
+}
+
+.titre-enseigne:hover{
+    background-color: var(--main-color-hover);
+}
+ /*titre evenement */
+
+ /*css de la section enseigne */
+
+
+
+ /*css footer*/
+ .center {
+  background-color: var(--main-bg-color);
+
+  height:250px;
+  text-align: center;
+  border: 3px solid rgb(255, 255, 255);
+  margin-top: 4%;
+}
+
+.div-form{
+color: #ffffff;
+margin-top:40px;
+}
+
+.btn-sabonner{
+  color:brown;
+}
+.btn-sabonner:hover{
+  background-color: black;
+  color: #ffffff;
+}
+
+
+
+ /*css footer*/
+
+ /* recherche par grande categorie side bar */
+#mySidebar{
+  background-color:var(--main-bg-color);
+  z-index: 5;
+
+ }
+
+#mySidebar:hover{
+  background-color:var(--main-bg-color);
+}
+
+#grd-categorie-list{
+  font-size:small;
+ 
+  color: #000000;
+}
+
+#grd-categorie-list:hover{
+  background-color: var(--main-color-hover);
+}
+
+#grd-categorie-list-close{
+  font-size:large;
+  font-weight: bolder;
+  color: #000000;
+  background-color: #f7b80c;
+}
+
+
+
+/* recherche par grande categorie side bar */
+
+
+
+
+
+
+
+/**/
+/*un autre fichier css ajouter ici  ""acceuil_carousel.css""*/
+/* css general de image carousel */
+*{
+  margin:0;
+  padding:0;
+  
+}
+
+
+.cell{
+  width:500px;
+  height: 300px;
+  margin: 0 15px;
+  overflow: hidden;
+  border-radius: 15px;
+  
+ 
+  
+  
+}
+
+.cell img{
+  width: 500px;
+  height:300px;
+  object-fit: cover;
+
+  
+}
+
+
+/*.header-carousel{
+  padding-top: 2em;
+}*/
+
+/* css general de image carousel */
+
+
+/*effet zoom au header section de publicité*/
+
+.imge{
+ 
+  transition: transform .2s;
+
+}
+.imge:hover{
+-ms-transform: scale(1.5); /* IE 9 */
+-webkit-transform: scale(1.5); /* Safari 3-8 */
+transform: scale(1.5); 
+}
+
+
+
+/*effet zoom au header section de publicité*/
+
+
+/*cell logo*/
+
+.cell-logo{
+  width:150px;
+  height: 150px;
+  margin: 0 15px;
+  overflow: hidden;
+  border-radius: 15px;
+  
+ 
+  
+  
+}
+
+.cell-logo img{
+  width: 150px;
+  height:150px;
+  object-fit: cover;
+
+  
+}
+/*cell logo*/
+
+/*espace entre navbar et flickty carousel */
+.flickity-enabled.is-draggable{
+  margin-top: 180px;
+}
+/*espace entre nabar et flickty carousel*/
+
+/**/
+
+
+
+
+
+/**/
+/*un autre fichier css ajouter ici enseignes.css*/
+
+
+/* Float four columns side by side  // css de creation des colonnes en ligne */
+.column-enseign {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row-enseign {margin: 0 55px;}
+
+/* Clear floats after the columns */
+.row-enseign:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column-enseign {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*animation hover des cards*/
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #8d0000;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+/**/
+
+
+
+
+
+/**/
+/*un autre fichier css ajouter ici """offres_produits.css"""*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  
+  /*float: left;
+  width: 50%;
+  margin: -5px /*10px;*/
+  float: left;
+  width: 25%;
+  padding: 0 10px
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column  {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column  {
+    width: 120%;
+  }
+}
+
+
+/*css titre des cards */
+#title_of_card{
+  font-size: 20px;
+  font-weight: bolder;
+}
+/*css titre des cards */
+
+
+  /*css de input qui affiche la décompte des likes dislike ... */
+
+
+
+  /*css de input qui affiche la décompte des likes dislike ... */
+
+
+/**/
+
+
+
+
+
+
+/**test carousel*/
+/* 
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+ /* background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;*/
+/*}
+
+/* cell number */
+/* .carousel-cell:before {
+  display: block;
+  text-align: center;
+  /*content: counter(gallery-cell);*/
+  /* line-height: 300px;
+  font-size: 80px;
+  color: white;
+} */
+
+
+
+
+
+
+

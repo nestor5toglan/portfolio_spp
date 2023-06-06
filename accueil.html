@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>soldepromopub</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta http-equiv="x-UA-Compatible"  content="ie=edge">
+        
+        
+        <link rel="stylesheet" href="./css/styles.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="./css/accueil_caroussel.css" type="text/css"/>-->
+       <!--flickity css-->
+       <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+       <!--flickity css-->
+       <!--jquery cdn-->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       <!--jquery cdn-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+        <link rel="stylesheet" href="style_product_detail.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+
+
+
+
+
+
+        <script src="https://kit.fontawesome.com/ac328406e2.js" crossorigin="anonymous"></script>
+<!--Get your code at fontawesome.com-->
+    </head>
+    <body class="body">
+      <header>
+      <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+        onclick="w3_close()" id="grd-categorie-list-close">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button" id="grd-categorie-list">Categorie-1</a>
+        <a href="#" class="w3-bar-item w3-button" id="grd-categorie-list">Categorie-2</a>
+        <a href="#" class="w3-bar-item w3-button" id="grd-categorie-list">Categorie-3</a>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button" id="grd-categorie-list">Categorie4-Dropdown</button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#" class="w3-bar-item w3-button" id="grd-categorie-list">Element-1</a>
+            <a href="#" class="w3-bar-item w3-button" id="grd-categorie-list">Element-2</a>
+            <a href="#" class="w3-bar-item w3-button" id="grd-categorie-list">Element-3</a>
+          </div>
+        </div>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button" id="grd-categorie-list">Categorie5-Dropdown</button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#" class="w3-bar-item w3-button" id="grd-categorie-list">Element-1</a>
+            <a href="#" class="w3-bar-item w3-button" id="grd-categorie-list">Element-2</a>
+            <a href="#" class="w3-bar-item w3-button" id="grd-categorie-list">Element-3</a>
+          </div>
+        </div>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button" id="grd-categorie-list">Categorie6-Dropdown</button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#" class="w3-bar-item w3-button" id="grd-categorie-list">Element-1</a>
+            <a href="#" class="w3-bar-item w3-button" id="grd-categorie-list">Element-2</a>
+            <a href="#" class="w3-bar-item w3-button" id="grd-categorie-list">Element-3</a>
+          </div>
+        </div>
+      </div>
+<!--section en tête header -->
+    <section>
+    
+    <div class="div-denav" id="top-nav">
+        
+            
+           <!-- 
+            
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars" style="font-size:40px; color: aliceblue;"></i>
+             <strong style="color:aliceblue ;"> MENU</strong></a>-->
+             <img src="./images/logo-spp.png" class="logo" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()" id="icons-fermer">
+              <i class="fa fa-bars"></i>MENU</a>
+
+           
+             <a class="nav" href="accueil.html" >Accueil</a>
+             <a class="nav" href="campagnes.html"  style="text-indent:20px ;">Campagnes</a>
+             <a class="nav" href="soldes.html" style="text-indent:40px ;">Soldes</a>
+             <a class="nav" href="promotions.html" style="text-indent:20px ;">Promotions</a>
+             <a class="nav" href="nouveautes.html"  style="text-indent:20px ;">Nouveautés</a>
+             <a class="nav" href="evenements.html"  style="text-indent:20px ;">Evènements</a>
+             <a class="nav" href="enseignes.html" >Enseignes</a>
+             <a class="nav" href="offres_produits.html" style="margin-left: 35em;" >Produits</a>
+             <a class="nav" href="detail-produit.html" style="margin-left: 1em;  text-indent:10px" >Détail produit</a>
+          
+           
+           
+       <!-- <div class="nav" id="nav_id">
+        </div>-->
+    </div>
+    
+   </section>
+   </header>
+<!--section en tête header -->
+<!--section en tête publicité -->
+   
+   <div class="main-carousel" >
+       
+        <div class="cell"><img class="imge" src="./images/Belgian+Loafer+-+Cognac.jpg"></div>
+        <div class="cell"><img  class="imge" src="./images/WU_GKMS-WU-Promotion_Digital_Younger-Couple_1200x628px-3-1-1.jpg"></div>
+        <div class="cell"><img  class="imge"  src="./images/loafers_80490_l-2.jpg"></div>
+        <div class="cell"><img  class="imge"  src="./images/promo-code-for-shoes.jpg"></div>
+        <div class="cell"><img  class="imge"  src="./images/WU_GKMS-WU-Promotion_Digital_Younger-Couple_1200x628px-3-1-1.jpg"></div>
+        <div class="cell"><img   class="imge" src="./images/promo-code-for-shoes.jpg"></div>
+   
+    </div>
+   
+<!--section en tête publicité -->
+<!--section de recherche par saisie  -->
+<section class="sct-recherche">
+  
+    <div class="bloc-recherche" id="flex-container">
+        <div class="recherche" id="flex-item">
+            <label class="lbl-recherche"><strong>Rechercher</strong></label>
+           
+            <input class="inpt-recherche" placeholder="Produits,  Enseignes,  Soldes,  Promotions etc..."> <i class="fa fa-search" style="font-size:18px"></i>
+
+        </div>
+
+   
+ 
+  </div>
+</section>
+<!--section de recherche par saisie  -->
+
+<!--section de recherche par grande catégorie  -->
+<section>
+  
+<div class="recherche-par-categorie">
+    <ul class="search-by-categorie">
+        <li class="titr-list-catgorie"><strong>Recherche par catégorie:</strong> </li>
+        <li  class="list-catgorie"> HABILLEMENTS</li>
+        <li  class="list-catgorie"> AUTOMOBILES</li>
+        <li  class="list-catgorie">MOTOS</li>
+        <li class="list-catgorie">RESTAURANTS</li>
+        <li class="list-catgorie">FORMATIONS</li>
+        <li class="list-catgorie">TECHNOLOGIE</li>
+        <li class="list-catgorie">NOUVEAUTES</li>
+    </ul>
+
+
+    
+    <div class="rch-categorie">
+      
+      
+      <div id="main">
+        <button class="fa fa-bars" id="boutton-recherche-par-categorie" style="font-size:40px;color:aliceblue;" onclick="w3_open()">
+            
+        </button>
+      </div>
+
+        
+        <!--<div id="main">
+        
+        <div class="w3-teal">
+          <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+          <div class="w3-container">
+            <h1>My Page</h1>
+          </div>
+        </div>-->
+
+
+
+
+        <p class="campgne-paraph"> CAMPAGNES COMMERCIALES </p>
+    </div>
+    
+
+    
+
+</div>
+
+</section>
+<!--section de recherche par grande catégorie  -->
+
+
+<!--section de visuel campagne commerciale -->
+
+<!--section de recherche par grande catégorie  -->
+
+
+<!--section de visuel campagne commerciale -->
+<section class="campgne-comcial-sect">
+  
+    
+  <div class="box">
+    <div class="campgne-comcial-img-div" id="front">
+        <img src="./images/voitures_de_l__gende_5188.webp" class="imge-campgne-comrciale">
+    </div>
+    <div class="campgne-comcial-img-div" id="back">
+      <img src="./images/WU_GKMS-WU-Promotion_Digital_Younger-Couple_1200x628px-3-1-1.jpg" class="imge-campgne-comrciale">
+  </div>
+ </div>
+
+
+</section>
+<!--section  de visuel campagne commerciale  -->
+
+<!--section de soldes -->
+ <!--la div de titre -->
+<!-- titre solde-->
+<div class="div-titre-solde">
+  <button type="button" class="titre-solde">SOLDES</button>
+</div>
+<!-- titre solde -->
+<!--la div de titre -->
+
+
+<!--solde1*/ notez bien que la div de solde1 prend une css qui est la même chose que celui des deux autres soldes ; pour réduire le code css :)-->
+<p class="etiquette-soldes">SOLDES 20% <img src="./images/fleche-vers-le-bas.gif" width="30px"></p>
+<div class="flex-container-div-solde1">
+  
+  <div><img src="./images/amazon-soldes-ete-2022.webp" class="solde1-imge-property" ></div>
+  <div><br>
+   
+    <p class="titre-solde1">AMAZON1</p>
+    <p class="description-solde1">offre 20% de reduction sur chaque achat Lorem Ipsum is simply dummy text of the printing and typesetting .</p>
+      <button type="button" class="btn-solde1">savoir plus</button>
+
+  </div>
+</div>
+<!--solde1fin*/-->
+
+<!--solde2*/-->
+<p class="etiquette-soldes">SOLDES 30% <img src="./images/fleche-vers-le-bas.gif" width="30px"></p>
+
+<div class="flex-container-div-solde1">
+  <div><img src="./images/tv3.jpg" class="solde1-imge-property" ></div>
+  <div><br>
+    <p class="titre-solde1">AMAZON2</p>
+    <p class="description-solde1">offre 20% de reduction sur chaque achat Lorem Ipsum is simply dummy text of the printing and typesetting .</p>
+      <button type="button" class="btn-solde1">savoir plus</button>
+
+  </div>
+</div>
+<!--solde2fin*/-->
+
+<!--solde3*/-->
+<p class="etiquette-soldes">SOLDES 40% <img src="./images/fleche-vers-le-bas.gif" width="30px"></p>
+
+<div class="flex-container-div-solde1">
+  <div><img src="./images/soldes-une-live.webp" class="solde1-imge-property" ></div>
+  <div><br>
+    <p class="titre-solde1">AMAZON3</p>
+    <p class="description-solde1">offre 20% de reduction sur chaque achat Lorem Ipsum is simply dummy text of the printing and typesetting .</p>
+      <button type="button" class="btn-solde1">savoir plus</button>
+
+  </div>
+</div>
+<!--solde3fin*/-->
+
+
+
+<!--section de soldes -->
+
+
+<!--section de publicite2-->
+   <!--titre pub2-->
+<div class="section-publicite2">
+  <h1 class="init-zone-pub">PUBLICITES</h1>
+</div>
+   <!-- titre pub2-->
+
+   <div class="flex-container-div-publicite2">
+    <div>
+      <img src="./images/acoter2.jpg" class="publicite2-imge-property" >
+      <img src="./images/tv2.png" class="publicite2-imge-property" >
+      <img src="./images/pub2_2.jpeg" class="publicite2-imge-property" >
+
+     
+    </div>
+    <div><br>
+      <p class="titre-publicite2">FNAC</p>
+      <p class="description-publicite2">offre 20% de reduction sur chaque achat Lorem Ipsum is simply dummy text of the printing and typesetting .</p>
+        <button type="button" class="btn-publicite2">savoir plus</button>
+  
+    </div>
+  </div>
+
+<!--section de publicite2-->
+
+
+<!-- section promotion -->
+  <!-- titre promotion -->
+  <div class="div-titre-promotions">
+    <button type="button" class="titre-promotions">PROMOTIONS</button>
+  </div>
+  <!-- titre promotion -->
+        <!--promotion1*/-->
+
+  <p class="etiquette-promotion">PROMOTIONS 40% <img src="./images/fleche-vers-le-bas.gif" width="30px"></p>
+
+  <div class="flex-container-div-promotion1">
+    <div><img src="./images/promo1.jpeg" class="promotion1-imge-property" ></div>
+    <div><br>
+      <p class="titre-promotion1">AMAZON4</p>
+      <p class="description-promotion1">offre 20% de reduction sur chaque achat Lorem Ipsum is simply dummy text of the printing and typesetting .</p>
+        <button type="button" class="btn-promotion1">savoir plus</button>
+  
+    </div>
+  </div>
+        <!--promotion1 fin*/-->
+
+        <!--promotion2*/-->
+        <p class="etiquette-promotion">PROMOTIONS 50% <img src="./images/fleche-vers-le-bas.gif" width="30px"></p>
+
+  <div class="flex-container-div-promotion1">
+    <div><img src="./images/promo2.webp" class="promotion1-imge-property" ></div>
+    <div><br>
+      <p class="titre-promotion1">AMAZON5</p>
+      <p class="description-promotion1">offre 20% de reduction sur chaque achat Lorem Ipsum is simply dummy text of the printing and typesetting .</p>
+        <button type="button" class="btn-promotion1">savoir plus</button>
+  
+    </div>
+  </div>
+
+        <!--promotion2 fin*/-->
+
+
+        <!--promotion3*/-->
+        <p class="etiquette-promotion">PROMOTIONS 45% <img src="./images/fleche-vers-le-bas.gif" width="30px"></p>
+
+  <div class="flex-container-div-promotion1">
+    <div><img src="./images/promo3.jpg" class="promotion1-imge-property" ></div>
+    <div><br>
+      <p class="titre-promotion1">AMAZON6</p>
+      <p class="description-promotion1">offre 20% de reduction sur chaque achat Lorem Ipsum is simply dummy text of the printing and typesetting .</p>
+        <button type="button" class="btn-promotion1">savoir plus</button>
+  
+    </div>
+  </div>
+
+        <!--promotion3 fin*/-->
+<!-- section promotion -->
+
+
+
+<!--section de publicite3-->
+    <!--titre pub3-->
+    <div class="section-publicite3">
+      <h1  class="init-zone-pub">PUBLICITES</h1>
+    </div>
+       <!-- titre pub3-->
+       <div class="flex-container-div-publicite3">
+        <div>
+          <img src="./images/promo1.jpeg" class="publicite3-imge-property" >
+          <img src="./images/acoter2.jpg" class="publicite3-imge-property" >
+          <img src="./images/pub3_2.jpg" class="publicite3-imge-property" >
+        </div>
+        
+      </div>
+
+      
+    <!--section de publicite3-->
+
+
+  <!-- section des nouveautés -->
+    <!-- titre nouveaute -->
+  <div class="div-titre-nouveaute">
+    <button type="button" class="titre-nouveaute">NOUVEAUTES</button>
+  </div>
+   <!-- titre nouveaute -->
+
+    <!-- nouveaute1*/-->
+
+  <p class="etiquette-nouveaute">NOUVEAUTES<img src="./images/fleche-vers-le-bas.gif" width="30px"></p>
+
+  <div class="flex-container-div-nouveaute1">
+    <div><img src="./images/nv0.webp" class="nouveaute1-imge-property" ></div>
+    <div><br>
+      <p class="titre-nouveaute1">AMAZON7</p>
+      <p class="description-nouveaute1">offre 20% de reduction sur chaque achat Lorem Ipsum is simply dummy text of the printing and typesetting .</p>
+        <button type="button" class="btn-nouveaute">savoir plus</button>
+  
+    </div>
+  </div>
+        <!--nouveaute1 fin*/-->
+
+
+        <!-- nouveaute2*/-->
+
+  <p class="etiquette-nouveaute">NOUVEAUTES <img src="./images/fleche-vers-le-bas.gif" width="30px"></p>
+
+  <div class="flex-container-div-nouveaute1">
+    <div><img src="./images/nv1.jpg" class="nouveaute1-imge-property" ></div>
+    <div><br>
+      <p class="titre-nouveaute1">AMAZON8</p>
+      <p class="description-nouveaute1">offre 20% de reduction sur chaque achat Lorem Ipsum is simply dummy text of the printing and typesetting .</p>
+        <button type="button" class="btn-nouveaute">savoir plus</button>
+  
+    </div>
+  </div>
+        <!--nouveaute2 fin*/-->
+
+
+
+        <!-- nouveaute3*/-->
+
+  <p class="etiquette-nouveaute">NOUVEAUTES<img src="./images/fleche-vers-le-bas.gif" width="30px"></p>
+
+  <div class="flex-container-div-nouveaute1">
+    <div><img src="./images/nv3.jpg" class="nouveaute1-imge-property" ></div>
+    <div><br>
+      <p class="titre-nouveaute1">AMAZON9</p>
+      <p class="description-nouveaute1">offre 20% de reduction sur chaque achat Lorem Ipsum is simply dummy text of the printing and typesetting .</p>
+        <button type="button" class="btn-nouveaute">savoir plus</button>
+  
+    </div>
+  </div>
+        <!--nouveaute3 fin*/-->
+
+  <!-- section des nouveautés -->
+
+
+
+
+
+  <!-- la section des evenements -->
+     <!-- titre nouveaute -->
+  <div class="div-titre-evenement">
+    <button type="button" class="titre-evenement">EVENEMENTS</button>
+  </div>
+   <!-- titre nouveaute -->
+
+
+   <!-- evenement1*/-->
+
+   <p class="etiquette-evenement">EVENEMENTS<img src="./images/fleche-vers-le-bas.gif" width="30px"></p>
+
+   <div class="flex-container-div-evenement1">
+     <div><img src="./images/event0.webp" class="evenement1-imge-property" ></div>
+     <div><img src="./images/event1.webp" class="evenement1-imge-property" ></div>
+     <div><img src="./images/event2.png" class="evenement1-imge-property" ></div>
+   </div>
+         <!--evenement1 fin*/-->
+ 
+   
+  <!-- la section des evenements -->
+
+
+
+
+
+  <!-- la section des videos  -->
+     <!-- titre videos  -->
+     <div class="div-titre-evenement">
+      <button type="button" class="titre-evenement">VIDEOS</button>
+    </div>
+     <!-- titre videos  -->
+  
+  
+     <!-- videos1*/-->
+  
+     <p class="etiquette-video">VIDEOS<img src="./images/fleche-vers-le-bas.gif" width="30px"></p>
+  
+     <div class="flex-container-div-video1">
+       <div><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OP-00EwLdiU?start=89" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  class="video1-imge-property"></iframe></div>
+       <div><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OP-00EwLdiU?start=89" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  class="video1-imge-property"></iframe></div>
+
+       <div><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OP-00EwLdiU?start=89" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  class="video1-imge-property"></iframe></div>
+
+     </div>
+           <!--videos1 fin*/-->
+   
+     
+    <!-- la section des videos  -->
+
+
+
+
+
+    <!-- la section des enseignes -->
+     <!-- titre enseigne -->
+
+  <div class="div-titre-evenement">
+    <button type="button" class="titre-evenement">ENSEIGNES</button>
+  </div>
+   <!-- titre enseigne -->
+
+
+   <!-- enseigne*/-->
+
+   <p class="etiquette-evenement">ENSEIGNES<img src="./images/fleche-vers-le-bas.gif" width="30px"></p>
+
+   <div class="main-carousel2">
+    <div class="cell-logo"><img class="logo" src="./images/logo5.png"></div>
+    <div class="cell-logo"><img class="logo" src="./images/Adidas_Logo1.svg.png"></div>
+    <div class="cell-logo"><img class="logo" src="./images/Coca-Cola_logo3.svg.png"></div>
+    <div class="cell-logo"><img class="logo" src="./images/Lays-Logo2.png"></div>
+    <div class="cell-logo"><img class="logo" src="./images/unnamedlogo4.png"></div>
+    <div class="cell-logo"><img class="logo" src="./images/Adidas_Logo1.svg.png"></div>
+
+
+    <div class="cell-logo"><img class="logo" src="./images/logo5.png"></div>
+    <div class="cell-logo"><img class="logo" src="./images/Adidas_Logo1.svg.png"></div>
+    <div class="cell-logo"><img class="logo" src="./images/Coca-Cola_logo3.svg.png"></div>
+    <div class="cell-logo"><img class="logo" src="./images/Lays-Logo2.png"></div>
+    <div class="cell-logo"><img class="logo" src="./images/unnamedlogo4.png"></div>
+    <div class="cell-logo"><img class="logo" src="./images/Adidas_Logo1.svg.png"></div>
+
+
+
+    <div class="cell-logo"><img class="logo" src="./images/logo5.png"></div>
+    <div class="cell-logo"><img class="logo" src="./images/Adidas_Logo1.svg.png"></div>
+    <div class="cell-logo"><img class="logo" src="./images/Coca-Cola_logo3.svg.png"></div>
+    <div class="cell-logo"><img class="logo" src="./images/Lays-Logo2.png"></div>
+    <div class="cell-logo"><img class="logo" src="./images/unnamedlogo4.png"></div>
+    <div class="cell-logo"><img class="logo" src="./images/Adidas_Logo1.svg.png"></div>
+     
+   </div>
+ 
+         <!--enseigne fin*/-->
+ <!-- la section des enseignes -->
+
+ <!-- section footer-->
+ <footer>
+ <div class="center">
+  <div class="div-form">
+  	<form action="/action_page.php">
+  <label for="femail" style="font-weight:bolder ;">Email:</label>
+  <input type="email" id="femail" name="femail"><br><br>
+  
+  <input type="submit" value="S'abonner" style=" width: 30%; border-radius: 5px; font-weight: bolder;" class="btn-sabonner">
+</form>
+
+  </div><br>
+  
+  <div>
+  <p style="color:#ffff ;">NOUS SUIVRE SUR LES RESEAUX </p>
+<a class="btn btn-primary btn-lg btn-floating" style="background-color: #000000;" href="#!"role="button"><i class="fab fa-instagram"></i></a>
+<a class="btn btn-primary btn-lg btn-floating" style="background-color: #000000;" href="#!"role="button"><i class="fab fa-facebook-f"></i></a>
+<a class="btn btn-primary btn-lg btn-floating" style="background-color: #000000;" href="#!"role="button"><i class="fab fa-twitter"></i></a>
+<a class="btn btn-primary btn-lg btn-floating" style="background-color: #000000;" href="#!"role="button"><i class="fab  fa-linkedin-in"></i></a>
+<a class="btn btn-primary btn-lg btn-floating" style="background-color: #000000;" href="#!"role="button"><i class="fab fa-google"></i></a>
+  </div><br>
+  <div>
+  <p style="background-color: yellow;">COPYRIGHT @2022 POWERED by NESTECH </p>
+
+  </div>
+</div>
+
+ <!-- section footer fin-->
+
+
+
+
+
+
+
+    <script  src="./js/accueil.js" type="text/js"></script> 
+    <!--flickity script-->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!--flickity script-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <!--flickity script-->  
+    <script type="text/javascript">
+        $('.main-carousel').flickity({
+            // options
+           
+            wrapAround:true,
+            freeScroll: true,
+            autoPlay: true ,
+          });
+    </script> 
+    <!--flickity script-->
+
+
+<!--flickity script for logo -->  
+<script type="text/javascript">
+  $('.main-carousel2').flickity({
+      // options
+     
+      wrapAround:true,
+      freeScroll: true,
+      autoPlay:850 ,
+      
+    });
+</script> 
+<!--flickity script for logo -->
+
+
+
+
+
+    <!--responsivité du menu-->
+ <script>
+    function myFunction() {
+        
+        var x = document.getElementById("top-nav");
+        var y = document.getElementById("icons-fermer")
+        if (x.className === "div-denav") {
+          x.className += " responsive";
+          document.getElementById("top-nav").style.width = "440px";
+          document.getElementById("top-nav").style.height = "27em";
+          document.getElementById("top-nav").style.backgroundColor="#8d0000";
+          document.getElementById("top-nav").style.paddingTop="1em";
+          y.style.marginLeft = "-1.8em";//-1.8ml   0.3mt
+          y.style.marginTop = "-1em";
+          y.innerHTML = "<i style='font-size:24px' class='fas'>&#xf060;</i>" ;
+          
+
+
+        } else {
+          x.className = "div-denav";
+          document.getElementById("top-nav").style.width = "440px";
+          document.getElementById("top-nav").style.height = "13em";
+          y.innerHTML = "<i class='fa-solid fa-bars' style='font-size:2em;'></i>" ;
+       
+
+          
+        
+        }
+      }
+
+
+    
+  </script>
+
+
+<!-- SCRIPT OF VANILLA EFFECT ON IMAGE-->
+<script type="text/javascript" src="./js/vanilla-tilt.babel.min.js"></script>
+   <!--script effect for solde 123-->
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".solde1-imge-property"), {
+		max: 25,
+		speed: 400
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".solde1-imge-property"));
+</script>
+    <!--script effect for solde 123-->
+
+
+    <!--script effect for promotion 123-->
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".promotion1-imge-property"), {
+        max: 25,
+        speed: 400
+      });
+      
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll(".promotion1-imge-property"));
+    </script>
+
+    <!--script effect for promotion 123-->
+
+
+
+
+    <!--script effect for nouveaute 123-->
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".nouveaute1-imge-property"), {
+        max: 25,
+        speed: 400
+      });
+      
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll(".nouveaute1-imge-property"));
+    </script>
+
+    <!--script effect for nouveaute 123-->
+
+
+
+    <!--script effect for evenement 123-->
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".evenement1-imge-property"), {
+        max: 25,
+        speed: 400
+      });
+      
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll(".evenement1-imge-property"));
+    </script>
+
+    <!--script effect for evenement 123-->
+
+
+
+
+    <!--script effect for video 123-->
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".video1-imge-property"), {
+        max: 25,
+        speed: 400
+      });
+      
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll(".video1-imge-property"));
+    </script>
+
+    <!--script effect for video 123-->
+
+
+
+
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".div-visuel-solde2"), {
+		max: 25,
+		speed: 400
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".div-visuel-solde2"));
+</script>
+<!-- SCRIPT OF VANILLA EFFECT ON IMAGE-->
+
+
+<!-- script pub2 -->
+<!--<script>
+var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>-->
+<!--slide pub2 automatique-->
+<script>
+  var myIndex = 0;
+  carousel1();
+  
+  function carousel1() {
+    var i;
+    var x = document.getElementsByClassName("publicite2-imge-property");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel1, 2000); //pour Changer image every 2 seconds il faut 2000
+  }
+  </script>
+  <!--slide pub2 automatique-->
+
+  <!-- script pub2 -->
+
+
+
+ <!-- script pub3 -->
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("publicite3-imge-property");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); //pour Changer image every 2 seconds il faut 2000
+    }
+    </script>
+    <!--slide pub3 automatique-->
+  
+    <!-- script pub3 -->
+
+<!-- recherche par grandes categories sidebar -->
+    <script>
+      function w3_open() {
+        document.getElementById("main").style.marginLeft = "25%";
+        document.getElementById("mySidebar").style.width = "25%";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("boutton-recherche-par-categorie").style.display = 'none';
+      }
+      function w3_close() {
+        document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("boutton-recherche-par-categorie").style.display = "inline-block";
+      }
+      </script>
+<!-- recherche par grandes categories sidebar -->
+
+      
+
+
+
+
+
+    <!--<script>
+        function myFunction() {
+          var x = document.getElementById("nav_id");
+          if (x.className === "nav") {
+            x.className += "responsive";
+          } else {
+            x.className = "nav";
+          }
+        }
+        </script>-->
+    <!--responsivité du menu-->
+    </footer>
+    </body>
+
+</html>
