@@ -11,8 +11,8 @@ body{
 }
 
 /*button whatsap*/
-.btn-dark{
-    background-color: rgb(105, 209, 0);
+.btn-dark:hover{
+	--bs-btn-hover-bg: rgb(105, 209, 0);
 }
 
 /*titre-prdct*/
@@ -22,8 +22,9 @@ body{
     border-radius: 2rem;
     background-color: #8d0000;
     color: rgb(255, 255, 255);
-    width: 100%;
-    padding-left: 1.5em;
+    
+    padding: 5px;
+	width: max-content;
 }
 
 /*button whatsap*/
@@ -36,8 +37,8 @@ body{
 .column{
 	width: 600px;
 	padding: 10px;
-    margin-left: 15em;
-    margin-top: 90px;
+    /*margin-left: 15em;*/
+    margin-top: 70px;
 
 }
 
@@ -144,8 +145,10 @@ body{
     }
 
     .titre-prdct{
-        margin-top: -40%;
-    }
+        margin-top: -20%;
+		margin-left: 10px;
+
+	}
     #featured{
         max-width: 300px;
     }

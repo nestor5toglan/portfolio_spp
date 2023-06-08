@@ -34,6 +34,7 @@ https://flickity.metafizzy.co
   cursor: move;
   cursor: -webkit-grab;
   cursor: grab;
+  margin-top: -2%;
 }
 
 .flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
